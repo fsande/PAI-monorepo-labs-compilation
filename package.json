@@ -1,0 +1,32 @@
+{
+  "name": "PAI Labs compilation monorepo",
+  "version": "1.0.0",
+  "description": "Monorepo con diversos ejercicios y proyectos de prácticas",
+  "main": "index.js",
+  "private": true,
+    "workspaces": [
+    "p09-funciones",
+    "p10-proyectiles",
+    "p11-lissajous"
+  ],
+  "scripts": {
+    "install:all": "npm install --workspaces",
+    "build:all": "npm run build --workspaces --if-present",
+    "copy:index": "cp index.html dist/index.html",
+    "dev:uno": "npm run dev --workspace=p09-funciones",
+    "dev:dos": "npm run dev --workspace=p10-proyectiles",
+    "dev:tres": "npm run dev --workspace=p11-lissajous"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fsande/PAI-monorepo-labs-compilation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/fsande/PAI-monorepo-labs-compilation/issues"
+  },
+  "homepage": "https://github.com/fsande/PAI-monorepo-labs-compilation#readme"
+}
