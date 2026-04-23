@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "Monorepo con diversos ejercicios y proyectos de prácticas",
   "main": "index.js",
-  "private": true,
-    "workspaces": [
+  "private": true,            
+  "_comentario": "private: true Evita publicar accidentalmente el monorepo en npm",
+  "_comentario": "workspaces contiene la Lista de rutas a los proyectos individuales",
+    "workspaces": [          
     "p09-funciones",
     "p10-proyectiles",
     "p11-lissajous"
@@ -13,9 +15,9 @@
     "install:all": "npm install --workspaces",
     "build:all": "npm run build --workspaces --if-present",
     "copy:index": "cp index.html dist/index.html",
-    "dev:uno": "npm run dev --workspace=p09-funciones",
-    "dev:dos": "npm run dev --workspace=p10-proyectiles",
-    "dev:tres": "npm run dev --workspace=p11-lissajous"
+    "dev:p09": "npm run dev --workspace=p09-funciones",
+    "dev:p10": "npm run dev --workspace=p10-proyectiles",
+    "dev:p11": "npm run dev --workspace=p11-lissajous"
   },
   "repository": {
     "type": "git",
