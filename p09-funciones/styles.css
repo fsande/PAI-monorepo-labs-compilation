@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: whitesmoke;
+  color: black;
+}
+
+header {
+  padding: 1.5rem 1rem 1rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+header h2 {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: normal;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+nav a {
+  color: blue;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 1rem 2rem;
+}
+
+canvas {
+  display: block;
+  width: min(95vw, 1200px);
+  height: auto;
+  border: 1px solid silver;
+  background-color: white;
+}

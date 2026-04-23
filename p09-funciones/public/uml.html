@@ -1,0 +1,118 @@
+<!--
+  Universidad de La Laguna
+  Escuela Superior de Ingeniería y Tecnología
+  Grado en Ingeniería Informática
+  Programación de Aplicaciones Interactivas
+
+  @author Daniel Martínez
+  @since Apr 07 2026
+  @description Index page for practice 9 resources.
+-->
+
+<!DOCTYPE html>
+<html lang='es'>
+  <head>
+    <meta charset='UTF-8'>
+    <title>Daniel Martínez Sopo</title>
+    <script
+      src='https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js'
+      defer
+    ></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        mermaid.initialize({ startOnLoad: true, theme: 'neutral' });
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1>UML Diagram: Function Plotting</h1>
+      <h2>Daniel Martínez Sopo</h2>
+      <nav>
+        <a href='./index.html'>Home</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class='mermaid'>
+        classDiagram
+        direction TB
+
+        class Main {
+          +main() void
+        }
+
+        class View {
+          -context: CanvasRenderingContext2D
+          -canvasElementId: string
+          -viewport: Viewport
+          -functionToPlot: Function
+          +render() void
+          -drawBackground() void
+        }
+
+        class Viewport {
+          -minimumHorizontalValue: number
+          -maximumHorizontalValue: number
+          -minimumVerticalValue: number
+          -maximumVerticalValue: number
+          +getMinimumHorizontalValue() number
+          +getMaximumHorizontalValue() number
+          +getMinimumVerticalValue() number
+          +getMaximumVerticalValue() number
+          +getHorizontalRange() number
+          +getVerticalRange() number
+        }
+
+        class GridRenderer {
+          -context: CanvasRenderingContext2D
+          -viewport: Viewport
+          +draw() void
+          -drawVerticalLines() void
+          -drawHorizontalLines() void
+          -mapHorizontalValueToCanvas(horizontalValue: number) number
+          -mapVerticalValueToCanvas(verticalValue: number) number
+        }
+
+        class AxesRenderer {
+          -context: CanvasRenderingContext2D
+          -viewport: Viewport
+          +draw() void
+          -drawHorizontalAxis() void
+          -drawVerticalAxis() void
+          -drawHorizontalAxisLabels() void
+          -drawVerticalAxisLabels() void
+          -drawOriginLabel() void
+          -adjustHorizontalLabelPosition(horizontalPosition: number, labelWidth: number) number
+          -drawRightArrowhead(canvasHorizontalCoordinate: number, canvasVerticalCoordinate: number) void
+          -drawUpArrowhead(canvasHorizontalCoordinate: number, canvasVerticalCoordinate: number) void
+          -mapHorizontalValueToCanvas(horizontalValue: number) number
+          -mapVerticalValueToCanvas(verticalValue: number) number
+        }
+
+        class FunctionRenderer {
+          -context: CanvasRenderingContext2D
+          -viewport: Viewport
+          -functionToPlot: Function
+          +draw() void
+          -calculateHorizontalStep() number
+          -isOutsideVisibleVerticalRange(verticalValue: number) boolean
+          -mapHorizontalValueToCanvas(horizontalValue: number) number
+          -mapVerticalValueToCanvas(verticalValue: number) number
+        }
+
+        Main ..> View
+        Main ..> Viewport
+
+        View --> Viewport
+        View --> GridRenderer
+        View --> AxesRenderer
+        View --> FunctionRenderer
+
+        GridRenderer --> Viewport
+        AxesRenderer --> Viewport
+        FunctionRenderer --> Viewport
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://typedoc.org/schema.json",
+  "entryPoints": ["src"],
+  "entryPointStrategy": "expand",
+  "out": "docs",
+  "name": "Daniel Martínez - P09",
+  "includeVersion": true,
+  "disableSources": false,
+  "exclude": [
+    "**/*.test.ts",
+    "**/node_modules/**"
+  ],
+  "validation": {
+    "notExported": true,
+    "invalidLink": true,
+    "notDocumented": false
+  },
+  "searchInComments": true,
+  "cleanOutputDir": true,
+  "githubPages": true
+}
