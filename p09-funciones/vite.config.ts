@@ -6,8 +6,11 @@ const base = process.env.BASE_URL || '/p09-funciones/';
 export default defineConfig({
   base,
   root: '.',
-  publicDir: 'public',
+  publicDir: '.',
   build: {
+    rollupOptions: {
+      input: 'src/exercises/home-work/main.ts' // Indica tu archivo principal aquí
+    },  
     outDir: '../dist/p09-funciones',
     assetsDir: 'assets',
     sourcemap: true,

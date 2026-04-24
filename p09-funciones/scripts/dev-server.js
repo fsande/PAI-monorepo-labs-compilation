@@ -6,11 +6,11 @@ const PORT = process.env.PORT || 8080;
 const root = path.resolve();
 
 app.use(express.static(path.join(root, "dist")));
-app.use(express.static(path.join(root, "public")));
+app.use(express.static(path.join(root, ".")));
 app.use('/docs', express.static(path.join(root, 'docs')));
 
 app.get("*", (req, res) => {
-  res.sendFile(path.join(root, "public", "index.html"));
+  res.sendFile(path.join(root, ".", "index.html"));
 });
 
 app.listen(PORT, () => {

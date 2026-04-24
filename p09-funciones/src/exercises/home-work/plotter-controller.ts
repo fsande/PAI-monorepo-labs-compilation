@@ -10,8 +10,8 @@
  * event listeners, and coordination between the input and the view.
  */
 
-import { Viewport } from './model/viewport.js';
-import { View } from './view/view.js';
+import { Viewport } from './model/viewport.ts';
+import { View } from './view/view.ts';
 
 /**
  * Global declaration for the mathjs library.

@@ -1,19 +1,20 @@
 {
   "compilerOptions": {
-    "target": "ES2023",
+    "target": "es2023",
     "module": "esnext",
-    "isolatedModules": true,
     "lib": ["ES2023", "DOM"],
     "types": ["vite/client"],
     "skipLibCheck": true,
+
     "rootDir": "src",
-    "outDir": "../dist/p09-funciones",
+    "outDir": "dist",
     "declaration": true,
     "strict": true,
     "noImplicitAny": true,
     "forceConsistentCasingInFileNames": true,
     "esModuleInterop": true,
     "lib": ["ES2022", "DOM"],
+
 
     /* Bundler mode */
     "moduleResolution": "bundler",
@@ -27,7 +28,6 @@
     "noUnusedParameters": true,
     "erasableSyntaxOnly": false,
     "noFallthroughCasesInSwitch": true
-
   },
   "include": ["src/**/*.ts"],
   "exclude": [
@@ -38,3 +38,4 @@
     "test"
   ]
 }
+

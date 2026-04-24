@@ -20,12 +20,13 @@
       <h1>PAI Practice 9: Function Plotting</h1>
       <h2>Daniel Martínez Sopo</h2>
     </header>
+
     <main>
       <p>Available pages:</p>
       <ul>
         <li><a href='./daniel-martinez-sopo-function-rendering.html'>Function plotting</a></li>
         <li><a href='./uml.html'>UML diagram</a></li>
-        <li><a href='/docs/index.html'>TypeDoc documentation</a></li>
+        <li><a href='./docs/index.html'>TypeDoc documentation</a></li>
         <li><a href='./excercise1-ellipse.html'>Excercise 1 - Elypse</a></li>
         <li><a href='./excercise2-lilplanet.html'>Excercise 2 - Red planet</a></li>
         <li><a href='./excercise3-orbit.html'>Excercise 3 - Orbiting planet</a></li>
