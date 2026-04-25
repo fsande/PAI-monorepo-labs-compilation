@@ -1,10 +1,19 @@
 {
   "compilerOptions": {
-    "target": "es2023",
+    "target": "ES2023",
     "module": "esnext",
+    "isolatedModules": true,
     "lib": ["ES2023", "DOM"],
     "types": ["vite/client"],
     "skipLibCheck": true,
+    "rootDir": "src",
+    "outDir": "../dist/p10-proyectiles",
+    "declaration": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    "lib": ["ES2022", "DOM"],
 
     /* Bundler mode */
     "moduleResolution": "bundler",
@@ -16,8 +25,16 @@
     /* Linting */
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "erasableSyntaxOnly": true,
+    "erasableSyntaxOnly": false,
     "noFallthroughCasesInSwitch": true
+
   },
-  "include": ["src"]
+  "include": ["src/**/*.ts"],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "build",
+    "lib",
+    "test"
+  ]
 }
