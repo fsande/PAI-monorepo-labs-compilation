@@ -1,0 +1,48 @@
+/**
+ * Universidad de La Laguna
+ * Escuela Superior de Ingeniería y Tecnología
+ * Grado en Ingeniería Informática
+ * Programación de Aplicaciones Interactivas 2025-2026
+ *
+ * @author Sergio Rosales Calzadilla alu010635590@ull.edu.es
+ * @since Apr 19 2026
+ * @desc Custom Bulma variables and imports for ULL corporate identity.
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap');
+
+$primary: #6e2a84; // Púrpura ULL
+$family-sans-serif: "Open Sans", sans-serif;
+$family-primary: $family-sans-serif;
+$family-secondary: "Montserrat", sans-serif;
+$title-family: $family-secondary;
+
+@import "../../../../node_modules/bulma/bulma";
+
+html, body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; 
+  font-family: $family-primary;
+}
+
+header {
+  background-color: $primary;
+  color: white;
+  box-sizing: border-box;
+}
+
+.title {
+  font-family: $family-secondary;
+  font-weight: 700;
+}
+
+input[type=range] {
+  accent-color: $primary;
+}
+
+aside {
+  background-color: #f5f5f5;
+  border-left: 1px solid #dbdbdb;
+}

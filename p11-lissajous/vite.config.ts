@@ -1,12 +1,12 @@
 import { defineConfig } from 'vite';
 import { resolve } from 'path';
 
-const base = process.env.BASE_URL || '/p11-lissajous/';
+const base = process.env.BASE_URL || '/./';
 
 export default defineConfig({
   base,
   root: '.',
-  publicDir: 'public',
+  publicDir: false,
   build: {
     outDir: '../dist/p11-lissajous',
     assetsDir: 'assets',
