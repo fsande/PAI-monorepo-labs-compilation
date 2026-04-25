@@ -9,7 +9,7 @@
  * @description Class responsible for drawing the Cartesian axes and their labels.
  */
 
-import { Viewport } from '../model/viewport.ts';
+import { Viewport } from './viewport.js';
 
 /**
  * Draws the Cartesian axes, arrowheads and numeric labels.

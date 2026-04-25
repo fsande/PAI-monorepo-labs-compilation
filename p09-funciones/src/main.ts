@@ -6,17 +6,17 @@
  *
  * @author Daniel Martínez
  * @since Apr 07 2026
- * @description Main entry point for the Ellipse rendering application.
+ * @description Main entry point. Instantiates and runs the application controller.
  */
 
 import { PlotterController } from './plotter-controller.js';
 
 /**
  * Starts the application by initializing the controller.
- * @desc Minimal entry point that delegates all logic to the PlotterController.
+ * @desc Minimal entry point that delegates all logic to the PlotterController[cite: 1, 2].
  */
 function main(): void {
-  const applicationController = new PlotterController();
+  const applicationController = new PlotterController('plot-canvas', 'text-canvas', 'function-input', 'render-button');
   applicationController.run();
 }
 

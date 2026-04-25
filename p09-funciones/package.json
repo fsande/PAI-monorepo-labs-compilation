@@ -1,19 +1,14 @@
 {
-  "name": "p09-funciones",
+  "name": "PAI p09 Funciones",
+  "description": "Representación gráfica de Funciones",
   "author": "Daniel Martínez <daniel.martinez.24@ull.edu.es>",
+  "license": "MIT",
   "private": true,
   "version": "1.0.0",
-  "description": "funciones",
   "type": "module",
-  "main": "dist/exercises/home-work/main.js",
   "scripts": {
     "dev": "vite",
-    "build": "tsc --noEmit && vite build",
-    "watch": "tsc-watch -p tsconfig.json",
-    "lint": "eslint .",
-    "lint:ci": "eslint . --ext .ts",
-    "docs": "typedoc",
-    "server": "node scripts/dev-server.js",
+    "build": "tsc && vite build",
     "preview": "vite preview"
   },
   "keywords": [
@@ -21,26 +16,9 @@
     "TypeScript",
     "Canvas"
   ],
-  "author": "Daniel Martínez <daniel.martinez.24@ull.edu.es>",
-  "license": "MIT",
-  "dependencies": {
-    "express": "^4.18.2"
-  },
   "devDependencies": {
     "@types/express": "^4.17.21",
-    "@typescript-eslint/eslint-plugin": "^5.50.0",
-    "core-js": "^3.21.0",
-    "eslint": "^8.33.0",
-    "eslint-config-standard-with-typescript": "^34.0.0",
-    "eslint-plugin-import": "^2.27.5",
-    "eslint-plugin-n": "^15.6.1",
-    "eslint-plugin-promise": "^6.1.1",
-    "ts-node": "^10.9.2",
-    "tsc-watch": "^6.0.0",
-    "typedoc": "^0.28.17",
-    "typescript": "^5.9.3",
-    "undici-types": "^7.24.7",
+    "typescript": "~6.0.2",
     "vite": "^8.0.10"
   }
 }
-

@@ -1,16 +1,13 @@
 import { defineConfig } from 'vite';
 import { resolve } from 'path';
 
-const base = process.env.BASE_URL || '/p09-funciones/';
+const base = process.env.BASE_URL || '/./';
 
 export default defineConfig({
   base,
   root: '.',
-  publicDir: '.',
+  publicDir: false,
   build: {
-    rollupOptions: {
-      input: 'src/exercises/home-work/main.ts' // Indica tu archivo principal aquí
-    },  
     outDir: '../dist/p09-funciones',
     assetsDir: 'assets',
     sourcemap: true,

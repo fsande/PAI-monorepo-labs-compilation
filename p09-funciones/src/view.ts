@@ -10,10 +10,10 @@
  * and the user-defined function.
  */
 
-import { Viewport } from '../model/viewport.ts';
-import { AxesRenderer } from './axes-renderer.ts';
-import { FunctionRenderer } from './function-renderer.ts';
-import { GridRenderer } from './grid-renderer.ts';
+import { Viewport } from './viewport.js';
+import { AxesRenderer } from './axes-renderer.js';
+import { FunctionRenderer } from './function-renderer.js';
+import { GridRenderer } from './grid-renderer.js';
 
 export class View {
   private readonly plotContext: CanvasRenderingContext2D;

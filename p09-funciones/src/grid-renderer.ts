@@ -9,7 +9,7 @@
  * @description Class responsible for drawing the background Cartesian grid.
  */
 
-import { Viewport } from '../model/viewport.ts';
+import { Viewport } from './viewport.js';
 
 /**
  * Draws the background grid of the Cartesian plane.

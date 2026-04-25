@@ -9,7 +9,7 @@
  * @description Class responsible for drawing a mathematical function with a specific color.
  */
 
-import { Viewport } from '../model/viewport.js';
+import { Viewport } from './viewport.js';
 
 /**
  * Draws a mathematical function inside the visible Cartesian plane.
