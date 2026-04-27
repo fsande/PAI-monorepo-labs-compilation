@@ -1,0 +1,23 @@
+{
+  "name": "PAI-Platform-Game",
+  "description": "A MVC Platform Game",
+  "license": "MIT",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "PAI",
+    "TypeScript",
+    "Canvas"
+  ],
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "typescript": "~6.0.2",
+    "vite": "^8.0.10"
+  }
+}
