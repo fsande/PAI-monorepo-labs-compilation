@@ -12,7 +12,8 @@
  * floating animation.
  */
 
-import {Actor, KeyMap} from './Actor.js';
+import {Actor} from './Actor.js';
+import type {KeyMap} from './Actor.js';
 import {Vector} from '../Vector.js';
 import {Level} from './Level.js';
 
@@ -39,7 +40,7 @@ export class Coin extends Actor {
    * @param level - Optional level reference (unused by coins)
    * @param keys - Optional keyboard state map (unused by coins)
    */
-  act(step?: number, level?: Level, keys?: KeyMap) {
+  act(step?: number, _level?: Level, _keys?: KeyMap) {
     if (step === undefined) return;
     const wobbleSpeed = 8;
     const wobbleDist = 0.07;

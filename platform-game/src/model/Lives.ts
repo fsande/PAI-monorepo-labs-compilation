@@ -45,7 +45,7 @@ export class Lives extends Actor {
    * @param level - Optional level reference (unused by lives)
    * @param keys - Optional keyboard state map (unused by lives)
    */
-  act(step?: number, level?: Level, keys?: KeyMap): void {
+  act(step?: number, _level?: Level, _keys?: KeyMap): void {
     if (step === undefined) return;
     const wobbleSpeed = 5;
     const wobbleDist = 0.04;

@@ -13,7 +13,7 @@
  */
 
 import {Level} from './Level.js';
-import {SoundType} from '../view/AudioManager.js';
+import type {SoundType} from '../view/AudioManager.js';
 import type {KeyMap} from './Actor.js';
 
 /**
@@ -21,7 +21,9 @@ import type {KeyMap} from './Actor.js';
  * GameModel
  */
 export {Level} from './Level.js';
-export {Actor, ActorType, KeyMap} from './Actor.js';
+export {Actor} from './Actor.js';
+export type {ActorType} from './Actor.js';
+export type {KeyMap} from './Actor.js';
 export {Vector} from '../Vector.js';
 export {Player} from './Player.js';
 export {Coin} from './Coin.js';

@@ -43,7 +43,7 @@ export class Score extends Actor {
    * @param level - Optional level reference (unused by score)
    * @param keys - Optional keyboard state map (unused by score)
    */
-  act(step?: number, level?: Level, keys?: KeyMap): void {
+  act(step?: number, _level?: Level, _keys?: KeyMap): void {
     if (this.isAnimating && step) {
       this.animationTimer += step;
       if (this.animationTimer >= 0.3) {

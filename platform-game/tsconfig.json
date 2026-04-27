@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "noUnusedLocals": false,
     "target": "ES2023",
     "module": "esnext",
     "isolatedModules": true,

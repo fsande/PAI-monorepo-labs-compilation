@@ -12,10 +12,13 @@
  * animation frames, level progression, and sound playback.
  */
 
-import {Actor, GameModel, KeyMap} from '../model/GameModel.js';
-import {ActorView} from '../view/ActorView.js';
-import {PlayerView} from '../view/PlayerView.js';
-import {AudioManager, SoundType} from '../view/AudioManager.js';
+import {Actor} from '../model/GameModel.js';
+import {GameModel} from '../model/GameModel.js';
+import type {KeyMap} from '../model/GameModel.js';
+import type {ActorView} from '../view/ActorView.js';
+import type {PlayerView} from '../view/PlayerView.js';
+import {AudioManager} from '../view/AudioManager.js';
+import type {SoundType} from '../view/AudioManager.js';
 import {GameView} from '../view/GameView.js';
 
 /** @classdesc Acts as the central controller in an MVC architecture. */

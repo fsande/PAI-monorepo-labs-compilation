@@ -54,7 +54,7 @@ export class Lava extends Actor {
    * @param level - Optional level reference for collision detection
    * @param keys - Optional keyboard state map (unused by lava)
    */
-  act(step?: number, level?: Level, keys?: KeyMap) {
+  act(step?: number, level?: Level, _keys?: KeyMap) {
     if (step === undefined || level === undefined) return;
     const newPos = this.getPosition().plus(this.speed.times(step));
     if (!level.obstacleAt(newPos, this.getSize())) {
