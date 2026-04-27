@@ -1,0 +1,25 @@
+/**
+ * Universidad de La Laguna
+ * Escuela Superior de Ingeniería y Tecnología
+ * Grado en Ingeniería Informática
+ * Programación de Aplicaciones Interactivas
+ *
+ * @author Adrián Castro Rodríguez <adrian.castro.46@ull.edu.es>
+ * @author Bruno Morales Hernández <morales.hernandez.28@ull.edu.es>
+ * @author Ezequiel Juan Canale Oliva <ezequiel.juan.11@ull.edu.es>
+ * @since Apr 27 2026
+ * @desc Styles
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

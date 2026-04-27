@@ -23,11 +23,9 @@ function main() {
   if (!(canvas instanceof HTMLCanvasElement)) {
     throw new TypeError('Main: #main-canvas not found or invalid');
   }
-
   const model = new GameModel(GAME_LEVELS);
   const view = new GameView(canvas, 'canvas');
   const controller = new GameController(model, view);
-
   controller.start();
 }
 

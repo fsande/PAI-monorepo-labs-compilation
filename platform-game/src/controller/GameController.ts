@@ -52,6 +52,7 @@ export class GameController {
     globalThis.addEventListener('keydown', () => {
       this.audioManager.playBackground();
     }, {once: true});
+    console.log('Controller ejecutado');
   }
 
   /** @desc Starts the game from level 0 with initial lives. */

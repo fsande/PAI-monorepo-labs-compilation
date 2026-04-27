@@ -6,7 +6,7 @@ const base = process.env.BASE_URL || '/./';
 export default defineConfig({
   base,
   root: '.',
-  publicDir: false,
+  publicDir: './public',
   build: {
     outDir: '../dist/platform-game',
     assetsDir: 'assets',

@@ -59,8 +59,7 @@ export class CanvasDisplay {
    * @param width - World width in grid units
    * @param height - World height in grid units
    */
-  constructor(private readonly canvas: HTMLCanvasElement, width: number,
-      height: number) {
+  constructor(private readonly canvas: HTMLCanvasElement, width: number, height: number) {
     this.context = this.canvas.getContext('2d')!;
     this.canvas.width = Math.min(800, width * this.scale);
     this.canvas.height = Math.min(550, height * this.scale);
@@ -137,11 +136,8 @@ export class CanvasDisplay {
       for (let x = xStart; x < xEnd; x++) {
         const tile = grid[y]?.[x];
         if (!tile) continue;
-
         const screenPosition = this.worldToCanvas(new Vector(x, y));
-
         const tileX = tile === 'lava' ? this.scale : 0;
-
         this.context.drawImage(
             this.otherSprites,
             tileX, 0,
