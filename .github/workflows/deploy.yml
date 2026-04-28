@@ -46,9 +46,9 @@ jobs:
             npm ci
             export BASE_URL="/$REPO_NAME/p09-funciones/"
             npm run build
-            mkdir -p     "../../dist/p09-funciones"
-            cp -r dist/* "../../dist/p09-funciones/"
-            cd ../..
+            #mkdir -p     "../../dist/p09-funciones"
+            #cp -r dist/* "../../dist/p09-funciones/"
+            #cd ../..
             echo "✅ p09-funciones built successfully"
           fi
           
