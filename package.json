@@ -9,7 +9,8 @@
     "workspaces": [          
     "p09-funciones",
     "p10-proyectiles",
-    "p11-lissajous"
+    "p11-lissajous",
+    "platform-game"
   ],
   "scripts": {
     "install:all": "npm install --workspaces",
