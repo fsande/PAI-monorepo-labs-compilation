@@ -1,7 +1,11 @@
 {
   "name": "PAI Labs compilation monorepo",
+  "author": "F. de Sande",
   "version": "1.0.0",
   "description": "Monorepo con diversos ejercicios y proyectos de prácticas",
+  "license": "ISC",
+  "keywords": ["PAI", "ULL"],
+  "type": "commonjs",
   "main": "index.js",
   "private": true,            
   "_comentario": "private: true Evita publicar accidentalmente el monorepo en npm",
@@ -10,6 +14,8 @@
     "p09-funciones",
     "p10-proyectiles",
     "p11-lissajous",
+    "p12-hangman",
+    "p12-MonteCarloIntegration",
     "platform-game"
   ],
   "scripts": {
@@ -18,16 +24,15 @@
     "copy:index": "cp index.html dist/index.html",
     "dev:p09": "npm run dev --workspace=p09-funciones",
     "dev:p10": "npm run dev --workspace=p10-proyectiles",
-    "dev:p11": "npm run dev --workspace=p11-lissajous"
+    "dev:p11": "npm run dev --workspace=p11-lissajous",
+    "dev:p12h": "npm run dev --workspace=p12-hangman",
+    "dev:p12m": "npm run dev --workspace=p12-MonteCarloIntegration",
+    "dev:platform-game": "npm run dev --workspace=platform-game"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fsande/PAI-monorepo-labs-compilation.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
   "bugs": {
     "url": "https://github.com/fsande/PAI-monorepo-labs-compilation/issues"
   },
