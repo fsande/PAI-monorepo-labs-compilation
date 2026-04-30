@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+:root {
+  color-scheme: light;
+  --bulma-family-primary: "Montserrat", "Avenir Next", "Gill Sans", "Trebuchet MS", sans-serif;
+  --bulma-link-h: 278deg;
+  --bulma-link-s: 92%;
+  --bulma-link-l: 29%;
+  --ull-font-sans: "Montserrat", "Avenir Next", "Gill Sans", "Trebuchet MS", sans-serif;
+  --ull-violet: #5c068c;
+  --ull-violet-strong: #47056d;
+  --ull-violet-soft: #f4ecfa;
+  --ull-violet-border: rgba(92, 6, 140, 0.18);
+  --ull-page-bg: #f7f2fb;
+  --ull-surface: rgba(255, 255, 255, 0.96);
+  --ull-surface-strong: #ffffff;
+  --ull-ink: #24182f;
+  --ull-ink-soft: #6d5a7e;
+  --ull-divider: rgba(92, 6, 140, 0.14);
+  --ull-shadow: 0 1rem 2.5rem rgba(92, 6, 140, 0.08);
+  --ull-success: #2f8f46;
+  --ull-success-soft: #e8f5ea;
+  --ull-danger: #a32845;
+  --ull-danger-soft: #f8e8ec;
+}
