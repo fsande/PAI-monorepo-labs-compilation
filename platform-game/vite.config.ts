@@ -8,7 +8,7 @@ export default defineConfig({
   root: '.',
   publicDir: './public',
   build: {
-    outDir: '../dist/platform-game',
+    outDir: 'dist',
     assetsDir: 'assets',
     sourcemap: true,
   },

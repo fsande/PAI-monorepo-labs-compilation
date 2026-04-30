@@ -8,7 +8,7 @@ export default defineConfig({
   root: '.',
   publicDir: false,
   build: {
-    outDir: '../dist/p12-MonteCarloIntegration',
+    outDir: 'dist',
     assetsDir: 'assets',
     sourcemap: true,
   },
