@@ -1,0 +1,143 @@
+@import './canvas-page.css';
+
+body {
+  overflow: auto;
+}
+
+.workspace {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.stage-panel {
+  grid-template-rows: auto minmax(0, 1fr) auto auto;
+  overflow: visible;
+}
+
+.simulation-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 20rem;
+  gap: 1rem;
+  align-items: stretch;
+  min-height: 0;
+}
+
+.canvas-frame {
+  min-height: clamp(340px, 56vh, 620px);
+  z-index: 0;
+}
+
+#montecarlo-canvas {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.graph-status {
+  margin: 0;
+  font-size: 0.92rem;
+  color: var(--ink-soft);
+}
+
+.simulation-controls {
+  display: grid;
+  align-content: start;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.simulation-stats {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.simulation-stat-line {
+  margin: 0;
+  font-size: 0.92rem;
+  color: var(--ink);
+}
+
+.simulation-control-button {
+  width: 100%;
+  min-height: 2.8rem;
+  justify-content: center;
+  text-align: center;
+  white-space: normal;
+}
+
+.simulation-control-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  min-height: 2.8rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.simulation-control-slider {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.simulation-control-label {
+  font-size: 0.84rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.montecarlo-form-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.9rem 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.montecarlo-field {
+  display: grid;
+  gap: 0.42rem;
+  min-width: 0;
+}
+
+.montecarlo-label {
+  font-size: 0.84rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.montecarlo-input {
+  min-height: 2.8rem;
+  width: 100%;
+}
+
+.montecarlo-input[aria-invalid='true'] {
+  border-color: var(--danger);
+}
+
+.montecarlo-error {
+  min-height: 1.1rem;
+  font-size: 0.82rem;
+  color: var(--danger);
+}
+
+@media (max-width: 1100px) {
+  .simulation-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .montecarlo-form-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  .montecarlo-form-grid {
+    grid-template-columns: 1fr;
+  }
+}
