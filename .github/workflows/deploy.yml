@@ -1,15 +1,10 @@
-name: Deploy Projects to GitHub Pages
-
-# Upgrade GitHub Actions to latest major versions for Node 24
-# https://github.com/neomjs/neo/issues/9600
-env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+name: Deploy Projects to GitHub Pages - Fabián
 
 on:
   push:
     branches:
       - main
-  workflow_dispatch:  # Permite ejecutar manualmente
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -26,10 +21,10 @@ jobs:
     
     steps:
       - name: Checkout
-        uses: actions/checkout@v5
+        uses: actions/checkout@v4
 
       - name: Setup Node.js
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v4
         with:
           node-version: '20'
 
@@ -39,25 +34,106 @@ jobs:
         run: |
           mkdir -p deploy
           
-          # Build primer proyecto
+          # Build 1-TheHangmanGame
           if [ -d "p09-funciones" ]; then
-            echo "🔨 Building p09-funciones..."
+            echo "🔨 Building P09 Funciones..."
             cd p09-funciones
             npm ci
             export BASE_URL="/$REPO_NAME/p09-funciones/"
             npm run build
-            #mkdir -p     "../../dist/p09-funciones"
-            #cp -r dist/* "../../dist/p09-funciones/"
-            #cd ../..
+            mkdir -p "../../deploy/p09-funciones/"
+            cp -r dist/* "../../deploy/p09-funciones//"
+            cd ../..
             echo "✅ p09-funciones built successfully"
           fi
           
-          # Repetir para cada proyecto...
-
       - name: Create index page
         run: |
-          cp index.html deploy/index.html
-          # cat > deploy/index.html << 'EOF'
+          cat > deploy/index.html << 'EOF'
+          <!DOCTYPE html>
+          <html lang="es">
+          <head>
+              <meta charset="UTF-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <title>Labs Compilation</title>
+              <style>
+                  * {
+                      margin: 0;
+                      padding: 0;
+                      box-sizing: border-box;
+                  }
+                  body {
+                      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+                      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                      min-height: 100vh;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      padding: 20px;
+                  }
+                  .container {
+                      max-width: 800px;
+                      width: 100%;
+                  }
+                  h1 {
+                      color: white;
+                      text-align: center;
+                      margin-bottom: 40px;
+                      font-size: 2.5em;
+                      text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+                  }
+                  .projects {
+                      display: grid;
+                      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                      gap: 25px;
+                  }
+                  .project-card {
+                      background: white;
+                      border-radius: 15px;
+                      padding: 30px;
+                      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+                      transition: transform 0.3s ease, box-shadow 0.3s ease;
+                      text-decoration: none;
+                      color: inherit;
+                      display: block;
+                  }
+                  .project-card:hover {
+                      transform: translateY(-5px);
+                      box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+                  }
+                  .project-icon {
+                      font-size: 3em;
+                      margin-bottom: 15px;
+                  }
+                  .project-name {
+                      font-size: 1.5em;
+                      font-weight: bold;
+                      color: #333;
+                      margin-bottom: 10px;
+                  }
+                  .project-description {
+                      color: #666;
+                      line-height: 1.6;
+                  }
+              </style>
+          </head>
+          <body>
+              <div class="container">
+                  <h1>🚀 Labs Compilation</h1>
+                  <div class="projects">
+                      <a href="./p09-funciones/" class="project-card">
+                          <div class="project-icon">🎮</div>
+                          <div class="project-name">The Hangman Game</div>
+                          <div class="project-description">Juego clásico de adivinar palabras construido con TypeScript</div>
+                      </a>
+                  </div>
+              </div>
+          </body>
+          </html>
+          EOF
+
+      - name: Copy root 404 page for SPA routing
+        run: cp 404.html deploy/404.html
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
