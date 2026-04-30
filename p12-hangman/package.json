@@ -1,0 +1,31 @@
+{
+  "name": "PAI-P12-Hangman",
+  "description": "Juego del Ahorcado",
+  "author": "Adrián Pérez Poleo",
+  "license": "MIT",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "docs": "typedoc",
+    "build-bulma": "sass --load-path=node_modules styles/ULL-styles.scss styles/ULL-styles.css",
+    "build:vite": "npm run build:p10 && npm run build",
+    "build:all": "npm run build:vite && npm run docs"
+  },
+  "keywords": [
+    "PAI",
+    "TypeScript",
+    "Canvas"
+  ],
+  "devDependencies": {
+    "sass": "^1.99.0",
+    "bulma": "^1.0.4",
+    "@types/express": "^4.17.21",
+    "typedoc": "^0.28.19",
+    "typescript": "~6.0.3",
+    "vite": "^8.0.10"
+  }
+}

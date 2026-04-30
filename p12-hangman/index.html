@@ -1,0 +1,60 @@
+<!--  
+   Universidad de La Laguna
+	 Escuela Superior de Ingeniería y Tecnología
+	 Grado en Ingeniería Informática
+	 Programación de Aplicaciones Interactivas
+
+   @author Adrián Pérez Poleo
+   @since April 25, 2026
+	 @description Lab assignment 12 - Hangman
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="./styles/ULL-styles.css">
+    <script type="module" src="./src/hangman-client.ts"></script>
+    <title>Adrián Pérez Poleo - Assignment 12 - Hangman</title>
+  </head>
+
+  <body>
+    <nav class="navbar is-primary">
+      <div class="navbar-brand">
+        <h1 class="navbar-item title is-4 mb-0">Hangman Game</h1>
+      </div>
+
+      <div class="navbar-menu">
+    
+        <div class="navbar-start">
+          <a class="navbar-item" href="../../../../index.html">
+            Home
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="columns is-vcentered is-centered">
+      
+      <div id="hangman_image" class="column is-4 has-text-right"></div>
+      
+      <div id="information-div" class="column is-7">
+        <p class="title is-3 has-text-centered "> Guess The Country<br>(Spanish Version) </p>
+        <div id="word-viewer"></div>
+        <p class="title has-text-centered" id="result"></p>
+      </div>
+      
+    </div>
+
+    <div id="keyboard" class="column is-12 has-text-centered "></div>
+
+    <footer class="footer pt-2 pb-5" style="position: fixed; bottom: 0; width: 100%;">
+      <div class="content has-text-centered">
+        <p>
+          Grado en Ingeniería Informática | Programación de Aplicaciones Interactivas | Adrián Pérez Poleo (alu0101635224@ull.edu.es)
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

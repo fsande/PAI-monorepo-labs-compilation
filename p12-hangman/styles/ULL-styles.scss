@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+// Funciones de Bulma (como findColorInvert)
+@use "bulma/sass/utilities/functions" as *;
+
+// Colores de la institución
+$ull-purple: #5C068C;
+$ull-pink: #FA7C91;
+$ull-beige: #EFF0EB;
+$ull-link: #006699;
+
+// Configuramos Bulma con las variables que definimos
+@use "bulma/sass" with (
+  $primary: $ull-purple,
+  $link: $ull-link,
+  $body-background-color: $ull-beige,
+  $family-primary: '"Argentum Sans", sans-serif',
+  $control-border-width: 2px
+);
+
+// Usamos la tipografía oficial de la Universidad
+@import url("https://fonts.cdnfonts.com/css/argentum-sans");
+
+// Definimos que is-primary se asocie con el morado
+.is-primary {
+    background-color: $ull-purple !important;
+    color: white;
+}

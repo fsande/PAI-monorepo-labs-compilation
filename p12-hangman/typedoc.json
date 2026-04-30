@@ -1,0 +1,15 @@
+{
+  "entryPoints": [
+    "src/hangman-client.ts",
+    "src/Controller/hangman-controller.ts",
+    "src/Model/country_names.ts",
+    "src/Model/hangman-model.ts",
+    "src/View/hangman-view.ts",
+    "src/View/image-render.ts",
+    "src/View/keyboard.ts",
+    "src/View/result-viewer.ts",
+    "src/View/word-viewer.ts",
+    "src/event.ts"
+  ],
+  "out": "./doc"
+}
