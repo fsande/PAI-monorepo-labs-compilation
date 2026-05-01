@@ -117,6 +117,19 @@ jobs:
             echo "✅ platform-game built successfully"
           fi
 
+          # Build 7-Integration
+          if [ -d "p14-integration" ]; then
+            echo "🔨 Building the Platform Game..."
+            cd p14-integration
+            npm ci
+            export BASE_URL="/$REPO_NAME/p14-integration/"
+            npm run build
+            mkdir -p "../deploy/p14-integration/"
+            cp -r dist/* "../deploy/p14-integration/"
+            cd ..
+            echo "✅ Trapezoidal Rule Integration built successfully"
+          fi
+
       - name: Create index page
         run: |
           cat > deploy/index.html << 'EOF'
@@ -192,7 +205,9 @@ jobs:
                   <h1>🚀 PAI Labs Compilation</h1>
                   <div class="projects">
                       <a href="./p09-funciones/" class="project-card">
-                          <div class="project-icon">🎮</div>
+                          <div class="project-icon">
+                          <a href="https://www.flaticon.com/free-icons/math" title="math icons">Math icons created by Freepik - Flaticon</a>
+                          </div>
                           <div class="project-name">Funciones</div>
                           <div class="project-description">Representación de Funciones</div>
                       </a>
@@ -225,6 +240,13 @@ jobs:
                           <div class="project-icon">🎮</div>
                           <div class="project-name">Game</div>
                           <div class="project-description">A Platform Game</div>
+                      </a>
+
+
+                      <a href="./p14-integration/" class="project-card">
+                          <div class="project-icon">🎮</div>
+                          <div class="project-name">Integration</div>
+                          <div class="project-description">Trapezoidal Rule Integration</div>
                       </a>
                   </div>
               </div>
