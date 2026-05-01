@@ -66,8 +66,9 @@ $ npm install
 ```bash
 $ npm run build
 ```
+10. Actualizar el fichero `.github/workflows/deploy.yml` de despliegue con GitHub Actions del proyecto
 
-10. Actualizar el repo incorporando el nuevo proyecto:
+11. Actualizar el repo incorporando el nuevo proyecto:
 ```bash
 $ git add . ; git commit -m "nuevo proyecto"; git push
 ```
