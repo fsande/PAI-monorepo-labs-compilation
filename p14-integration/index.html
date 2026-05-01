@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Trapezoidal Rule Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="./assets/styles/main.css" />
+  <link rel="icon" type="image/svg+xml" href="./assets/picture.png" />
+  <script type="module" src="./src/trapezoidal-client.ts"></script>
+</head>
+
+<body>
+  <!-- Thin Banner -->
+  <div class="banner has-background-primary py-2" style="height: 1rem;"></div>
+
+  <!-- Main Content Section -->
+  <section class="section is-flex is-flex-direction-column is-align-items-center is-justify-content-center">
+    <div class="container has-text-centered mb-2">
+      <!-- Page Title -->
+      <h1 class="title" style="margin-bottom: 0rem; margin-top: -2rem;"> Trapezoidal Rule Calculator | Eric Ríos
+        Hamilton</h1>
+      <p><a href="index.html">Go back to index</a></p>
+    </div>
+
+    <div class="container">
+      <div class="is-flex is-flex-direction-row is-align-items-start" style="height: 100%; width: 100%;">
+        <!-- Canvas -->
+        <div class="is-flex is-justify-content-center" style="flex: 3; height: 80%;">
+          <canvas id="graph-canvas" class="has-background-light"
+            style="width: 100%; height: 100%; background-size: cover;"></canvas>
+        </div>
+        <!-- Buttons -->
+        <div class="box has-background-light is-flex is-flex-direction-column is-align-items-left" style="flex: 1; margin-left: 1rem;">
+          <p id="expression-text" class="mt-4">Expression</p>
+          <div class="is-flex is-align-items-center my-2">
+            <span style="margin-right: 0.5rem;">y =</span>
+            <input id="expression-input" class="input" type="text" placeholder="this shouln't show" style="width: 90%;" />
+          </div>
+          <p id="n-trapezoids-text" class="mt-4">Number of Trapezoids</p>
+          <div class="is-flex is-align-items-center my-2">
+            <input id="trapezoids-input" class="input" type="text" placeholder="this shouln't show" style="width: 90%;" />
+          </div>
+          <p id="start-text" class="mt-4">Start</p>
+          <div class="is-flex is-align-items-center my-2">
+            <input id="start-input" class="input" type="text" placeholder="this shouln't show" style="width: 90%;" />
+          </div>
+          <p id="start-text" class="mt-4">End</p>
+          <div class="is-flex is-align-items-center my-2">
+            <input id="end-input" class="input" type="text" placeholder="this shouln't show" style="width: 90%;" />
+          </div>
+          <button id="update-button" class="button is-info my-2">Update</button>
+        </div>
+      </div>
+      <div class="is-flex is-flex-direction-column is-align-items-center">  
+        <div id="result" class="box has-background-light" style="width: 100%;">
+          <span>Sum of all Trapezium areas: </span>
+          <span id="result-value" class="has-text-weight-bold">0</span>
+        </div>
+    </div>
+  </section>
+</body>
+
+</html>
