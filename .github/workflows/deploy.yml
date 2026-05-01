@@ -43,7 +43,7 @@ jobs:
             npm run build
             mkdir -p "../deploy/p09-funciones/"
             cp -r dist/* "../deploy/p09-funciones//"
-            cd ../..
+            cd ..
             echo "✅ p09-funciones built successfully"
           fi
 
@@ -56,7 +56,7 @@ jobs:
             npm run build
             mkdir -p "../deploy/p10-proyectiles/"
             cp -r dist/* "../deploy/p10-proyectiles/"
-            cd ../..
+            cd ..
             echo "✅ p10-proyectiles built successfully"
           fi
 
@@ -69,7 +69,7 @@ jobs:
             npm run build
             mkdir -p "../deploy/p11-lissajous/"
             cp -r dist/* "../deploy/p11-lissajous//"
-            cd ../..
+            cd ..
             echo "✅ p11-lissajous built successfully"
           fi
          
@@ -82,7 +82,7 @@ jobs:
             npm run build
             mkdir -p "../deploy/p12-hangman/"
             cp -r dist/* "../deploy/p12-hangman//"
-            cd ../..
+            cd ..
             echo "✅ p12-hangman built successfully"
           fi
 
@@ -95,7 +95,7 @@ jobs:
             npm run build
             mkdir -p "../deploy/p12-MonteCarloIntegration/"
             cp -r dist/* "../deploy/p12-MonteCarloIntegration//"
-            cd ../..
+            cd ..
             echo "✅ p12-MonteCarloIntegration built successfully"
           fi
 
@@ -108,7 +108,7 @@ jobs:
             npm run build
             mkdir -p "../deploy/platform-game/"
             cp -r dist/* "../deploy/platform-game//"
-            cd ../..
+            cd ..
             echo "✅ platform-game built successfully"
           fi
 
