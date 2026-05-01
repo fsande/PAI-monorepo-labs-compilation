@@ -1,0 +1,121 @@
+          <!DOCTYPE html>
+          <html lang="es">
+          <head>
+              <meta charset="UTF-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <title>Labs Compilation</title>
+              <style>
+                  * {
+                      margin: 0;
+                      padding: 0;
+                      box-sizing: border-box;
+                  }
+                  body {
+                      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+                      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                      min-height: 100vh;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      padding: 20px;
+                  }
+                  .container {
+                      max-width: 800px;
+                      width: 100%;
+                  }
+                  h1 {
+                      color: white;
+                      text-align: center;
+                      margin-bottom: 40px;
+                      font-size: 2.5em;
+                      text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+                  }
+                  .projects {
+                      display: grid;
+                      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                      gap: 25px;
+                  }
+                  .project-card {
+                      background: white;
+                      border-radius: 15px;
+                      padding: 30px;
+                      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+                      transition: transform 0.3s ease, box-shadow 0.3s ease;
+                      text-decoration: none;
+                      color: inherit;
+                      display: block;
+                  }
+                  .project-card:hover {
+                      transform: translateY(-5px);
+                      box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+                  }
+                  .project-icon {
+                      font-size: 3em;
+                      margin-bottom: 15px;
+                  }
+                  .project-name {
+                      font-size: 1.5em;
+                      font-weight: bold;
+                      color: #333;
+                      margin-bottom: 10px;
+                  }
+                  .project-description {
+                      color: #666;
+                      line-height: 1.6;
+                  }
+              </style>
+          </head>
+          <body>
+              <div class="container">
+                  <h1>🚀 PAI Labs Compilation</h1>
+                  <div class="projects">
+                      <a href="./p09-funciones/" class="project-card">
+                          <div class="project-icon">
+                          <a href="https://www.flaticon.com/free-icons/math"</a>
+                          </div>
+                          <div class="project-name">Funciones</div>
+                          <div class="project-description">Representación de Funciones</div>
+                      </a>
+
+                      <a href="./p10-proyectiles/" class="project-card">
+                          <div class="project-icon">🎮</div>
+                          <div class="project-name">Proyectiles</div>
+                          <div class="project-description">Tiro Parabólico</div>
+                      </a>
+
+                      <a href="./p11-lissajous/" class="project-card">
+                          <div class="project-icon">🎮</div>
+                          <div class="project-name">Lissajous</div>
+                          <div class="project-description">Curvas de Lissajous</div>
+                      </a>
+
+                      <a href="./p12-hangman/" class="project-card">
+                          <div class="project-icon">🎮</div>
+                          <div class="project-name">Hangman</div>
+                          <div class="project-description">The Hangman Game</div>
+                      </a>
+
+                      <a href="./p12-MonteCarloIntegration/" class="project-card">
+                          <div class="project-icon">🎮</div>
+                          <div class="project-name">Integration</div>
+                          <div class="project-description">MonteCarlo Integration</div>
+                      </a>
+
+                      <a href="./platform-game/" class="project-card">
+                          <div class="project-icon">🎮</div>
+                          <div class="project-name">Game</div>
+                          <div class="project-description">A Platform Game</div>
+                      </a>
+
+
+                      <a href="./p14-integration/" class="project-card">
+                          <div class="project-icon">🎮</div>
+                          <div class="project-name">Integration</div>
+                          <div class="project-description">Trapezoidal Rule Integration</div>
+                      </a>
+                  </div>
+              </div>
+          </body>
+          </html>
+          EOF
+
