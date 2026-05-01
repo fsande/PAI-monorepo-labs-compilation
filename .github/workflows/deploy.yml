@@ -1,4 +1,9 @@
-name: Deploy Projects to GitHub Pages - Fabián
+name: Deploy Projects to GitHub Pages
+
+# Force Node.js 24 Runtime
+# force the runner to use Node.js 24 at runtime. Add this environment variable to your job or workflow:
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 on:
   push:
