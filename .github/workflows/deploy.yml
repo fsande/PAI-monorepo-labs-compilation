@@ -50,9 +50,9 @@ jobs:
           # Build 2-p10-proyectiles
           if [ -d "p10-proyectiles" ]; then
             echo "🔨 Building P10 Tiro Parabólico..."
-            cd p09-funciones
+            cd p10-proyectiles
             npm ci
-            export BASE_URL="/$REPO_NAME/p09-funciones/"
+            export BASE_URL="/$REPO_NAME/p10-proyectiles/"
             npm run build
             mkdir -p "../deploy/p10-proyectiles/"
             cp -r dist/* "../deploy/p10-proyectiles/"
@@ -62,7 +62,7 @@ jobs:
 
           # Build 3-p11-lissajous
           if [ -d "p11-lissajous" ]; then
-            echo "🔨 Building P09 Funciones..."
+            echo "🔨 Building Lissajous..."
             cd p11-lissajous
             npm ci
             export BASE_URL="/$REPO_NAME/p11-lissajous/"
@@ -75,7 +75,7 @@ jobs:
          
           # Build 4-p12-hangman
           if [ -d "p12-hangman" ]; then
-            echo "🔨 Building P09 Funciones..."
+            echo "🔨 Building Hangman..."
             cd p12-hangman
             npm ci
             export BASE_URL="/$REPO_NAME/p12-hangman/"
@@ -88,7 +88,7 @@ jobs:
 
           # Build 5-p12-MonteCarloIntegration
           if [ -d "p12-MonteCarloIntegration" ]; then
-            echo "🔨 Building P09 Funciones..."
+            echo "🔨 Building MonteCarlo Integration..."
             cd p12-MonteCarloIntegration
             npm ci
             export BASE_URL="/$REPO_NAME/p12-MonteCarloIntegration/"
@@ -101,7 +101,7 @@ jobs:
 
           # Build 6-platform-game
           if [ -d "platform-game" ]; then
-            echo "🔨 Building P09 Funciones..."
+            echo "🔨 Building the Platform Game..."
             cd platform-game
             npm ci
             export BASE_URL="/$REPO_NAME/platform-game/"
@@ -200,26 +200,26 @@ jobs:
 
                       <a href="./p11-lissajous/" class="project-card">
                           <div class="project-icon">🎮</div>
-                          <div class="project-name">XXX</div>
-                          <div class="project-description">XXX</div>
+                          <div class="project-name">Lissajous</div>
+                          <div class="project-description">Curvas de Lissajous</div>
                       </a>
 
                       <a href="./p12-hangman/" class="project-card">
                           <div class="project-icon">🎮</div>
-                          <div class="project-name">XXX</div>
-                          <div class="project-description">XXX</div>
+                          <div class="project-name">Hangman</div>
+                          <div class="project-description">The Hangman Game</div>
                       </a>
 
                       <a href="./p12-MonteCarloIntegration/" class="project-card">
                           <div class="project-icon">🎮</div>
-                          <div class="project-name">XXX</div>
-                          <div class="project-description">XXX</div>
+                          <div class="project-name">Integration</div>
+                          <div class="project-description">MonteCarlo Integration</div>
                       </a>
 
                       <a href="./platform-game/" class="project-card">
                           <div class="project-icon">🎮</div>
-                          <div class="project-name">XXX</div>
-                          <div class="project-description">XXX</div>
+                          <div class="project-name">Game</div>
+                          <div class="project-description">A Platform Game</div>
                       </a>
                   </div>
               </div>
