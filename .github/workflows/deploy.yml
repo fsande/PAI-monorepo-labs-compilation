@@ -131,7 +131,7 @@ jobs:
           fi
 
       - name: Create index page
-        run: cp index.html deploy/index.html
+        run: cp index.html deploy/index.html && cp styles.css deploy/styles.css
 
       - name: Copy root 404 page for SPA routing
         run: cp 404.html deploy/404.html
