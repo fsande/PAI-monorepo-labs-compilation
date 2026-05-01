@@ -22,34 +22,34 @@ npm run build:all    # Construye todos los proyectos
 $ git clone git@github.com:fsande/PAI-monorepo-labs-compilation.git root
 $ cd root
 ```
-1. Crear un subdirectorio para el nuevo proyecto:
+2. Crear un subdirectorio para el nuevo proyecto:
 ```bash
 $ mkidr new-project
 ```
-1. Copiar en el nuevo directorio un fichero `pacakge.json` de un proyecto anterior y actualizarlo para el nuevo:
+3. Copiar en el nuevo directorio un fichero `pacakge.json` de un proyecto anterior y actualizarlo para el nuevo:
 ```bash
 $ cp ../p09-funciones/package.json .
 ```
 Actualizar los campos `name`, `description`, `author` del nuevo fichero.
 Actualizar en los campos `devDependencies` y `dependencies` las dependencias específicas del nuevo proyecto.
 
-1. Copiar igualmente un fichero `tsconfig.json` de otro proyecto y actualizarlo:
+4. Copiar igualmente un fichero `tsconfig.json` de otro proyecto y actualizarlo:
 ```bash
 $ cp ../p09-funciones/tsconfig.json .
 ```
 Actualizar el campo `outDir` con el directorio de salida para el nuevo proyecto
 
-1. Copiar un fichero `vite.config.ts` de otro proyecto.
+5. Copiar un fichero `vite.config.ts` de otro proyecto.
 En este caso no hay nada que actualizar
 
-1. Crear el directorio `src` y copiar en él (creando quizás subdirectorios) todo el código del nuevo proyecto
+6. Crear el directorio `src` y copiar en él (creando quizás subdirectorios) todo el código del nuevo proyecto
 ```bash
 $ mkdir src
 $ cd src
 $ cp -R <directorio-otro-proyecto>/* .
 ```
 
-1. Copiar al directorio raiz del nuevo proyecto (`new-project`) el fichero `index.html` del proyecto que se
+7. Copiar al directorio raiz del nuevo proyecto (`new-project`) el fichero `index.html` del proyecto que se
 está copiando:
 ```bash
 cp <directorio-otro-proyecto>/otro-proyexto.html index.html
@@ -57,17 +57,17 @@ cp <directorio-otro-proyecto>/otro-proyexto.html index.html
 Actualizar en ese fichero `index.html` las direcciones de todos los recursos que carga (estilo, fichero
 principal `*.ts`, fuentes, etc. (revisar todo el contenido de `<head>`)
 
-1. Instalar las dependencias del nuevo proyecto:
+8. Instalar las dependencias del nuevo proyecto:
 ```bash
 $ npm install
 ```
 
-1. Compilar el proyecto y corregir todos los posibles errores al transpilar:
+9. Compilar el proyecto y corregir todos los posibles errores al transpilar:
 ```bash
 $ npm run build
 ```
 
-1.- Actualizar el repo incorporando el nuevo proyecto:
+10. Actualizar el repo incorporando el nuevo proyecto:
 ```bash
 $ git add . ; git commit -m "nuevo proyecto"; git push
 ```
