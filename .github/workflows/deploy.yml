@@ -34,7 +34,7 @@ jobs:
         run: |
           mkdir -p deploy
           
-          # Build 1-TheHangmanGame
+          # Build 1-P09-Funciones
           if [ -d "p09-funciones" ]; then
             echo "🔨 Building P09 Funciones..."
             cd p09-funciones
@@ -46,7 +46,72 @@ jobs:
             cd ../..
             echo "✅ p09-funciones built successfully"
           fi
-          
+
+          # Build 2-p10-proyectiles
+          if [ -d "p10-proyectiles" ]; then
+            echo "🔨 Building P10 Tiro Parabólico..."
+            cd p09-funciones
+            npm ci
+            export BASE_URL="/$REPO_NAME/p09-funciones/"
+            npm run build
+            mkdir -p "../../deploy/p10-proyectiles/"
+            cp -r dist/* "../../deploy/p10-proyectiles/"
+            cd ../..
+            echo "✅ p10-proyectiles built successfully"
+          fi
+
+          # Build 3-p11-lissajous
+          if [ -d "p11-lissajous" ]; then
+            echo "🔨 Building P09 Funciones..."
+            cd p11-lissajous
+            npm ci
+            export BASE_URL="/$REPO_NAME/p11-lissajous/"
+            npm run build
+            mkdir -p "../../deploy/p11-lissajous/"
+            cp -r dist/* "../../deploy/p11-lissajous//"
+            cd ../..
+            echo "✅ p11-lissajous built successfully"
+          fi
+         
+          # Build 4-p12-hangman
+          if [ -d "p12-hangman" ]; then
+            echo "🔨 Building P09 Funciones..."
+            cd p12-hangman
+            npm ci
+            export BASE_URL="/$REPO_NAME/p12-hangman/"
+            npm run build
+            mkdir -p "../../deploy/p12-hangman/"
+            cp -r dist/* "../../deploy/p12-hangman//"
+            cd ../..
+            echo "✅ p12-hangman built successfully"
+          fi
+
+          # Build 5-p12-MonteCarloIntegration
+          if [ -d "p12-MonteCarloIntegration" ]; then
+            echo "🔨 Building P09 Funciones..."
+            cd p12-MonteCarloIntegration
+            npm ci
+            export BASE_URL="/$REPO_NAME/p12-MonteCarloIntegration/"
+            npm run build
+            mkdir -p "../../deploy/p12-MonteCarloIntegration/"
+            cp -r dist/* "../../deploy/p12-MonteCarloIntegration//"
+            cd ../..
+            echo "✅ p12-MonteCarloIntegration built successfully"
+          fi
+
+          # Build 6-platform-game
+          if [ -d "platform-game" ]; then
+            echo "🔨 Building P09 Funciones..."
+            cd platform-game
+            npm ci
+            export BASE_URL="/$REPO_NAME/platform-game/"
+            npm run build
+            mkdir -p "../../deploy/platform-game/"
+            cp -r dist/* "../../deploy/platform-game//"
+            cd ../..
+            echo "✅ platform-game built successfully"
+          fi
+
       - name: Create index page
         run: |
           cat > deploy/index.html << 'EOF'
@@ -119,12 +184,42 @@ jobs:
           </head>
           <body>
               <div class="container">
-                  <h1>🚀 Labs Compilation</h1>
+                  <h1>🚀 PAI Labs Compilation</h1>
                   <div class="projects">
                       <a href="./p09-funciones/" class="project-card">
                           <div class="project-icon">🎮</div>
-                          <div class="project-name">The Hangman Game</div>
-                          <div class="project-description">Juego clásico de adivinar palabras construido con TypeScript</div>
+                          <div class="project-name">Funciones</div>
+                          <div class="project-description">Representación de Funciones</div>
+                      </a>
+
+                      <a href="./p10-proyectiles/" class="project-card">
+                          <div class="project-icon">🎮</div>
+                          <div class="project-name">Proyectiles</div>
+                          <div class="project-description">Tiro Parabólico</div>
+                      </a>
+
+                      <a href="./p11-lissajous/" class="project-card">
+                          <div class="project-icon">🎮</div>
+                          <div class="project-name">XXX</div>
+                          <div class="project-description">XXX</div>
+                      </a>
+
+                      <a href="./p12-hangman/" class="project-card">
+                          <div class="project-icon">🎮</div>
+                          <div class="project-name">XXX</div>
+                          <div class="project-description">XXX</div>
+                      </a>
+
+                      <a href="./p12-MonteCarloIntegration/" class="project-card">
+                          <div class="project-icon">🎮</div>
+                          <div class="project-name">XXX</div>
+                          <div class="project-description">XXX</div>
+                      </a>
+
+                      <a href="./platform-game/" class="project-card">
+                          <div class="project-icon">🎮</div>
+                          <div class="project-name">XXX</div>
+                          <div class="project-description">XXX</div>
                       </a>
                   </div>
               </div>
