@@ -117,7 +117,7 @@ jobs:
             echo "✅ platform-game built successfully"
           fi
 
-          # Build 7-Integration
+          # Build 7-Trapezoidal Rule Integration
           if [ -d "p14-integration" ]; then
             echo "🔨 Building the Platform Game..."
             cd p14-integration
@@ -128,6 +128,19 @@ jobs:
             cp -r dist/* "../deploy/p14-integration/"
             cd ..
             echo "✅ Trapezoidal Rule Integration built successfully"
+          fi
+
+          # Build 8-Clock
+          if [ -d "clock" ]; then
+            echo "🔨 Building the Platform Game..."
+            cd clock
+            npm ci
+            export BASE_URL="/$REPO_NAME/clock/"
+            npm run build
+            mkdir -p "../deploy/clock/"
+            cp -r dist/* "../deploy/clock/"
+            cd ..
+            echo "✅ Clock built successfully"
           fi
 
       - name: Create index page

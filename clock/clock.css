@@ -1,0 +1,28 @@
+/** A minimal CSS file for the analog clock project */
+
+h1 {
+  text-align: center;
+	font-size: 150%;
+}
+
+p {
+  text-align: center;
+  display: block;
+}
+
+body {
+  background: white;
+  color: blue;
+}
+
+canvas {
+  background: black;
+  padding: 0;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.btn-group {    
+    text-align: center;
+}
