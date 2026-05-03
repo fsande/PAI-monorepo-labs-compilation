@@ -1,0 +1,24 @@
+{
+  "name": "tic-tac-toe",
+  "description": "PAI Tic-Tac-Toe Game",
+  "author": "F. de Sande fsande@ull.es>",
+  "license": "MIT",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "PAI",
+    "OOP",
+    "TypeScript",
+    "Canvas"
+  ],
+  "devDependencies": {
+    "typescript": "~6.0.2",
+    "vite": "^8.0.10"
+  }
+}

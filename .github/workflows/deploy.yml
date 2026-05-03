@@ -143,6 +143,19 @@ jobs:
             echo "✅ Clock built successfully"
           fi
 
+          # Build 9-Tic Tac Toe
+          if [ -d "tic-tac-toe" ]; then
+            echo "🔨 Building the Platform Game..."
+            cd tic-tac-toe
+            npm ci
+            export BASE_URL="/$REPO_NAME/tic-tac-toe/"
+            npm run build
+            mkdir -p "../deploy/tic-tac-toe/"
+            cp -r dist/* "../deploy/tic-tac-toe/"
+            cd ..
+            echo "✅ Tic Tac Toe built successfully"
+          fi
+
       - name: Create index page
         run: cp index.html deploy/index.html && cp styles.css deploy/styles.css
 

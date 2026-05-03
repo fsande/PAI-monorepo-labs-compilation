@@ -1,0 +1,68 @@
+/**
+ * Universidad de La Laguna
+ * Escuela Superior de Ingeniería y Tecnología
+ * Grado en Ingeniería Informática
+ * Programación de Aplicaciones Interactivas 2025-2026
+ *
+ * @author Adrián Pérez Poleo <adrian.perez.46@ull.edu.es>
+ * @author Enrique Gómez Díaz <enrique.gomez.13@ull.edu.es>
+ * @author Manuel Cadenas García <manuel.cadenas.25@ull.edu.es>
+ * @since Mar 30 2026
+ * @desc Styles for the TicTacToe application.
+ *
+ */
+
+body {
+  background-color: whitesmoke;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+  color: darkblue;
+  font-size: 45px;
+  margin-bottom: 5px; 
+}
+
+a {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: darkblue;
+  display: block;
+  font-size: 20px;  
+  margin-top: 20px;
+  margin-bottom: 10px; 
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 5px;
+  margin: 20px auto;
+  width: max-content;
+  background-color: black;
+  padding: 5px;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+
+.cell:hover {
+  background-color: #f0f0f0;
+}
+
+.message {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 20px;
+  font-family: sans-serif;
+}
