@@ -7,7 +7,7 @@
     "types": ["vite/client"],
     "skipLibCheck": true,
     "rootDir": "src",
-    "outDir": "../dist/p10-proyectiles",
+    "outDir": "dist",
     "declaration": true,
     "strict": true,
     "noImplicitAny": true,

@@ -7,7 +7,7 @@
     "types": ["vite/client"],
     "skipLibCheck": true,
     "rootDir": "src",
-    "outDir": "../dist/p09-funciones",
+    "outDir": "dist",
     "declaration": true,
     "strict": true,
     "noImplicitAny": true,
