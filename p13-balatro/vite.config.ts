@@ -9,7 +9,7 @@ export default defineConfig({
   publicDir: './public',
   build: {
     outDir: 'dist',
-    assetsDir: 'public',
+    assetsDir: 'assets',
     sourcemap: true,
   },
   server: {
