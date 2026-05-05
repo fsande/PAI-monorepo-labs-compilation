@@ -8,7 +8,7 @@
  * @desc Class that knows how to display the preview of the score of a hand of cards.
  */
 
-import {HandScore} from '../Model/score-calculator';
+import type {HandScore} from '../Model/score-calculator';
 
 export class PreviewDisplay {
   /** Text field where the name of the han appears. */

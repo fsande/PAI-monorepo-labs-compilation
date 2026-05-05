@@ -8,7 +8,8 @@
  * @desc Module containing the rules of the Balatro game.
  */
 
-import {CardValue, Suit} from './card';
+import type {CardValue} from './card';
+import type {Suit} from './card';
 
 /** Names a hand in the Balatro can have. */
 export type HandName = 

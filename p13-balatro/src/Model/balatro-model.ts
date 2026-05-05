@@ -9,8 +9,9 @@
  */
 
 import {Card} from './card';
-import {HandScore, ScoreCalculator} from './score-calculator';
-import {Level} from './level';
+import type {HandScore} from './score-calculator';
+import {ScoreCalculator} from './score-calculator';
+import type {Level} from './level';
 import {PlayerState} from './player_state';
 import {Event} from '../event';
 import {BalatroRules} from './balatro-rules';

@@ -8,8 +8,10 @@
  * @desc Class that calculates the score of a given hand.
  */
 
-import {Card, CardValue} from './card';
-import {BalatroRules, HandName} from './balatro-rules';
+import {Card} from './card';
+import type {CardValue} from './card';
+import {BalatroRules} from './balatro-rules';
+import type {HandName} from './balatro-rules';
 
 /** 
  * Interface that defines how a hand score can be given.

@@ -14,7 +14,7 @@ import {ScoreDisplay} from './score-display';
 import {ActionPanel} from './action-panel';
 import {Card} from '../Model/card';
 import {PreviewDisplay} from './preview-display';
-import {HandScore} from '../Model/score-calculator';
+import type {HandScore} from '../Model/score-calculator';
 import {ResultDisplay} from './result-display';
 import {LevelInformationDisplay} from './level-information-display';
 

@@ -8,7 +8,9 @@
  * @desc Class that models a card in the Balatro game.
  */
 
-import {Card, CardValue, Suit} from './card';
+import {Card} from './card';
+import type {CardValue} from './card';
+import type {Suit} from './card';
 
 /**
  * Class that models a poker deck.
