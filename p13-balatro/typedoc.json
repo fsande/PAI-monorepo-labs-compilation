@@ -1,0 +1,26 @@
+{
+  "entryPoints": [
+    "src/Controller/balatro-controller.ts",
+    "src/Model/balatro-model.ts",
+    "src/Model/balatro-rules.ts",
+    "src/Model/card.ts",
+    "src/Model/deck.ts",
+    "src/Model/level.ts",
+    "src/Model/player_state.ts",
+    "src/Model/score-calculator.ts",
+    "src/View/action-panel.ts",
+    "src/View/balatro-view.ts",
+    "src/View/consumable-display.ts",
+    "src/View/hand-display.ts",
+    "src/View/hand-renderer.ts",
+    "src/View/inventory-display.ts",
+    "src/View/joker-display.ts",
+    "src/View/level-information-display.ts",
+    "src/View/preview-display.ts",
+    "src/View/result-display.ts",
+    "src/View/score-display.ts",
+    "src/balatro-client.ts",
+    "src/event.ts"
+  ],
+  "out": "./dist/src/exercises/home-work/doc/"
+}
